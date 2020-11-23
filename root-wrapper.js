@@ -6,6 +6,12 @@ const GlobalStyle = createGlobalStyle`
     --color-white: #fff;
     --color-black: #000;
 
+    --color-gray-light-1: #f7f7f7;
+    --color-gray-light-2: #eee;
+    --color-gray-dark-1: #777;
+    --color-gray-dark-2: #999;
+    --color-gray-dark-3: #333;
+
     --max-width: 1170px;
 }
 
@@ -23,6 +29,11 @@ html {
 
 body {
     box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--color-gray-dark);
 }
 
 ul {
