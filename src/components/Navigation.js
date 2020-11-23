@@ -22,7 +22,7 @@ const Navigation = () => {
       childImageSharp: { fluid },
     },
   } = useStaticQuery(query)
-  console.log(fluid)
+
   return (
     <Wrapper>
       <div className="nav-center">
@@ -55,7 +55,7 @@ const Wrapper = styled.nav`
   align-items: center;
 
   .nav-center {
-    width: 90vw;
+    width: 95vw;
     margin: 0 auto;
     max-width: var(--max-width);
   }

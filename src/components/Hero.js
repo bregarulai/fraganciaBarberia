@@ -35,6 +35,11 @@ const Hero = () => {
               where details make the differences
             </span>
           </h1>
+          <div className="hero__info">
+            <p>3234 Orange Blossom Trail</p>
+            <p>Orlando FL 33233</p>
+            <p>405 323 3433</p>
+          </div>
         </article>
       </Background>
     </Wrapper>
@@ -47,7 +52,7 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 90vw;
+    width: 95vw;
     margin: 0 auto;
     max-width: var(--max-width);
     color: var(--color-primary-blue-dark);
@@ -73,7 +78,15 @@ const Wrapper = styled.section`
         color: var(--color-primary-red);
         font-size: 2rem;
         font-weight: 300;
+        line-height: 1.1;
+        margin-top: 1rem;
       }
+    }
+
+    &__info {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      margin-top: 1rem;
     }
   }
 `

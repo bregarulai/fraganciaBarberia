@@ -64,6 +64,15 @@ img {
     max-width: var(--max-width);
 }
 
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--color-primary-red);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 992px) {
 
     html {
