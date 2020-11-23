@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     --color-black: #000;
 
     --color-primary-blue-dark: #0F1131;
+    --color-primary-red: #C02232;
 
     --color-gray-light-1: #f7f7f7;
     --color-gray-light-2: #eee;
@@ -26,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html {
-    font-size: 56.25%;
+    font-size: 50%;
 }
 
 body {
@@ -64,6 +65,10 @@ img {
 }
 
 @media screen and (min-width: 992px) {
+
+    html {
+        font-size: 56.25%;
+    }
     .section-center {
         width: 95vw;
     }
