@@ -56,6 +56,15 @@ const Wrapper = styled.section`
       display: grid;
       grid-template-columns: 1fr;
 
+      @media screen and (min-width: 900px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
       .card {
         border: 1px solid var(--color-gray-light-2);
         border-radius: 3px;

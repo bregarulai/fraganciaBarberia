@@ -33,15 +33,15 @@ const Gallery = () => {
           <h2>gallery</h2>
           <div className="underline"></div>
           <div className="gallery-grid">
-            {images.map(image => {
+            {images.map((image, index) => {
               const {
                 id,
                 title,
                 image: { fluid },
               } = image
               return (
-                <div key={id} className="img-box">
-                  <Image fluid={fluid} alt={title} />
+                <div key={id} className={`img-box img-box-${index}`}>
+                  <Image className="img" fluid={fluid} alt={title} />
                 </div>
               )
             })}
@@ -75,7 +75,42 @@ const Wrapper = styled.section`
       .img-box {
         border-radius: 3px;
         overflow: hidden;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+        .img {
+          height: 100%;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-areas:
+          "a b b"
+          "a c d"
+          "e f f"
+          "e g h";
+        .img-box-0 {
+          grid-area: b;
+        }
+        .img-box-1 {
+          grid-area: a;
+        }
+        .img-box-2 {
+          grid-area: c;
+        }
+        .img-box-3 {
+          grid-area: d;
+        }
+        .img-box-4 {
+          grid-area: e;
+        }
+        .img-box-5 {
+          grid-area: f;
+        }
       }
     }
   }

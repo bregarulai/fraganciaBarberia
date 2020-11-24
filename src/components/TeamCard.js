@@ -27,6 +27,19 @@ const Wrapper = styled.div`
   text-align: center;
   padding-bottom: 5rem;
 
+  @media screen and (min-width: 900px) {
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:last-child {
+      margin-top: 5rem;
+    }
+  }
+  }
+
   h4 {
     font-size: 1.8rem;
     text-transform: capitalize;

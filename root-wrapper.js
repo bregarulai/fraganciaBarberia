@@ -73,10 +73,17 @@ img {
   margin-right: auto;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 600px) {
 
     html {
         font-size: 56.25%;
+    }
+    
+}
+@media screen and (min-width: 900px) {
+
+    html {
+        font-size: 62.5%;
     }
     .section-center {
         width: 95vw;

@@ -15,13 +15,17 @@ const Service = () => {
         <div className="service-sections">
           <div className="text">
             <p>
-              Barbershop offers world-class men's haircuts, beard grooming, and
-              hot razor shaves. Here are just some of the services we are famous
-              for.
+              Josdek Barbershop offers world-class men's haircuts, beard
+              grooming, and hot razor shaves. Here are just some of the services
+              we are famous for. Get comfortable in a classic barber chair and
+              relax while your barber achieves your desired look. All cuts
+              include a straight razor nape shave. Let our barbers apply their
+              artistry to help you create the perfectly shaped beard or mustache
+              style you envision.
             </p>
           </div>
-          <div className="services-sub">
-            <ServiceBackground>
+          <ServiceBackground>
+            <div className="services-sub">
               <div className="service">
                 <div className="img-box">
                   <img src={beard} alt="josdek barbershop beard icon" />
@@ -38,6 +42,7 @@ const Service = () => {
                     alt="josdek barbershop mustage trim icon"
                   />
                 </div>
+
                 <h3>mustage trim</h3>
                 <p>Mustaches also need to be trimmed regularly </p>
               </div>
@@ -48,9 +53,11 @@ const Service = () => {
                     alt="josdek barbershop traditional haircut icon"
                   />
                 </div>
+
                 <h3>traditional haircut</h3>
                 <p>One of the most popular services our barbers provide</p>
               </div>
+
               <div className="service">
                 <div className="img-box">
                   <img src={razor} alt="josdek barbershop razor icon" />
@@ -58,8 +65,8 @@ const Service = () => {
                 <h3>shaves</h3>
                 <p>Our shaving services will make you look really handsome</p>
               </div>
-            </ServiceBackground>
-          </div>
+            </div>
+          </ServiceBackground>
         </div>
       </div>
     </Wrapper>
@@ -79,14 +86,32 @@ const Wrapper = styled.section`
       display: grid;
       grid-template-columns: 1fr;
 
+      @media screen and (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-top: 5rem;
+      }
+
       .text {
         font-size: 1.6rem;
         margin: 5rem 0;
+
+        @media screen and (min-width: 900px) {
+          width: 80%;
+          margin: 0 auto;
+        }
       }
 
       .services-sub {
         color: var(--color-gray-light-1);
         text-align: center;
+
+        @media screen and (min-width: 900px) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+        }
 
         .service {
           display: grid;
@@ -94,6 +119,7 @@ const Wrapper = styled.section`
           align-items: center;
           justify-content: center;
           padding: 3rem 2rem;
+          margin: 5rem 0;
 
           .img-box {
             width: 5rem;
