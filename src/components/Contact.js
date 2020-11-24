@@ -59,6 +59,8 @@ const Contact = () => {
 
 const Wrapper = styled.section`
   .contact-section {
+    padding-bottom: 3rem;
+
     h2 {
       text-align: center;
       text-transform: uppercase;
