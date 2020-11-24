@@ -23,7 +23,7 @@ const Hero = () => {
     },
   } = useStaticQuery(query)
   return (
-    <Wrapper>
+    <Wrapper className="section">
       <Background>
         <article className="hero">
           <div className="hero__logo">

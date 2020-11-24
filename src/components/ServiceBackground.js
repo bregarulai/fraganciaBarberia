@@ -5,7 +5,7 @@ import styled, { keyframes } from "styled-components"
 
 export const query = graphql`
   {
-    file(relativePath: { eq: "heroBg.jpg" }) {
+    file(relativePath: { eq: "serviceBg.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -15,7 +15,7 @@ export const query = graphql`
   }
 `
 
-const Background = ({ children, image }) => {
+const ServiceBackground = ({ children, image }) => {
   const {
     file: {
       childImageSharp: { fluid },
@@ -37,18 +37,17 @@ const Background = ({ children, image }) => {
 
 const fadeIn = keyframes`
     from {
-        background-color:rgba(255,255,255,0.4);
+        background-color:rgba(0,0,0,0.4);
     }
     to {
-        background-color:rgba(255,255,255,0.8);
+        background-color:rgba(0,0,0,0.8);
     }
 `
 
 const Wrapper = styled.section`
   .bcg {
     /* MUST!!!!!! */
-    min-height: 100vh;
-    margin-top: -15rem;
+    min-height: 100%;
     display: grid;
     place-items: center;
     animation: ${fadeIn} 2s ease-in-out 1 forwards;
@@ -58,4 +57,4 @@ const Wrapper = styled.section`
   }
 `
 
-export default Background
+export default ServiceBackground

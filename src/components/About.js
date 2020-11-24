@@ -42,7 +42,7 @@ const About = () => {
         <h1 className="about__title">about us</h1>
         <div className="underline"></div>
         <div className="about__sections">
-          <div className="section">
+          <div className="about-section">
             <Image fluid={imageLeft} alt="josdek barbershop about us photo" />
             <h2>best barbershop in orlando</h2>
             <p>
@@ -58,7 +58,7 @@ const About = () => {
               visit.
             </p>
           </div>
-          <div className="section">
+          <div className="about-section">
             <Image fluid={imageRight} alt="josdek barbershop about us photo" />
             <h2>most accessible barbershop in orlando</h2>
             <p>
@@ -92,7 +92,9 @@ const Wrapper = styled.section`
       display: flex;
       flex-direction: column;
 
-      .section {
+      .about-section {
+        margin-top: 5rem;
+
         h2 {
           text-transform: uppercase;
           font-weight: 300;
