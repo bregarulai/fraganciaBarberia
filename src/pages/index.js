@@ -1,5 +1,13 @@
 import React from "react"
-import { About, Hero, Layout, Service, Team, Gallery } from "../components"
+import {
+  About,
+  Hero,
+  Layout,
+  Service,
+  Team,
+  Gallery,
+  Contact,
+} from "../components"
 
 export default function Home() {
   return (
@@ -9,6 +17,7 @@ export default function Home() {
       <Service />
       <Team />
       <Gallery />
+      <Contact />
     </Layout>
   )
 }
