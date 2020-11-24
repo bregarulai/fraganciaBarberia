@@ -26,8 +26,9 @@ const Gallery = () => {
   } = useStaticQuery(query)
 
   return (
-    <GalleryBackground>
+    <>
       <Wrapper className="section">
+        <GalleryBackground></GalleryBackground>
         <div className="section-center gallery-section">
           <h2>gallery</h2>
           <div className="underline"></div>
@@ -47,17 +48,22 @@ const Gallery = () => {
           </div>
         </div>
       </Wrapper>
-    </GalleryBackground>
+    </>
   )
 }
 
 const Wrapper = styled.section`
+  background: transparent;
   .gallery-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     h2 {
       text-align: center;
       text-transform: uppercase;
       font-size: 2rem;
-      color: var(--color-gray-light-1);
+      color: var(--color-primary-blue-dark);
     }
 
     .gallery-grid {
@@ -69,7 +75,7 @@ const Wrapper = styled.section`
       .img-box {
         border-radius: 3px;
         overflow: hidden;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
       }
     }
   }
