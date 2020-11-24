@@ -33,13 +33,11 @@ const About = () => {
       childImageSharp: { fluid: imageRight },
     },
   } = useStaticQuery(query)
-  console.log(imageLeft)
-  console.log(imageRight)
 
   return (
     <Wrapper className="section">
       <div className="section-center about">
-        <h1 className="about__title">about us</h1>
+        <h2 className="about__title">about us</h2>
         <div className="underline"></div>
         <div className="about__sections">
           <div className="about-section">
