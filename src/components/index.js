@@ -5,5 +5,6 @@ import About from "./About"
 import Service from "./Service"
 import Team from "./Team"
 import TeamCard from "./TeamCard"
+import Gallery from "./Gallery"
 
-export { Layout, Background, Hero, About, Service, Team, TeamCard }
+export { Layout, Background, Hero, About, Service, Team, TeamCard, Gallery }
