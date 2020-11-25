@@ -64,29 +64,6 @@ const Wrapper = styled.section`
       @media screen and (min-width: 1200px) {
         grid-template-columns: 1fr 1fr 1fr;
       }
-
-      .card {
-        border: 1px solid var(--color-gray-light-2);
-        border-radius: 3px;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        margin: 5rem 0;
-        overflow: hidden;
-        text-align: center;
-        padding-bottom: 5rem;
-
-        h4 {
-          font-size: 1.8rem;
-          text-transform: capitalize;
-          margin-top: 2rem;
-        }
-
-        p {
-          font-size: 1.8rem;
-          line-height: 1.4;
-          margin-top: 1rem;
-          padding: 0 2rem;
-        }
-      }
     }
   }
 `
