@@ -72,7 +72,11 @@ const Footer = () => {
           <div className="copyright">
             <p>
               &copy; {new Date().getFullYear()} Josdek Barber. Website created
-              by <a href="www.flavioaquino.com">Flavio Aquino</a>.
+              by{" "}
+              <a href="http://www.flavioaquino.com" target="_blank">
+                Flavio Aquino
+              </a>
+              .
             </p>
           </div>
         </div>
