@@ -35,12 +35,12 @@ const About = () => {
   } = useStaticQuery(query)
 
   return (
-    <Wrapper className="section">
+    <Wrapper id="about" className="section">
       <div className="section-center about">
         <h2 className="about__title">about us</h2>
         <div className="underline"></div>
         <div className="about__sections">
-          <div className="about-section">
+          <div className="about-section left">
             <Image fluid={imageLeft} alt="josdek barbershop about us photo" />
             <div className="text">
               <h2>best barbershop in orlando</h2>
@@ -58,7 +58,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="about-section">
+          <div className="about-section right">
             <Image fluid={imageRight} alt="josdek barbershop about us photo" />
             <div className="text">
               <h2>most accessible barbershop in orlando</h2>
