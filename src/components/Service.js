@@ -5,6 +5,7 @@ import mustage from "../images/mustage-red.png"
 import combScissor from "../images/combScissor-red.png"
 import razor from "../images/razor-red.png"
 import ServiceBackground from "./ServiceBackground"
+import { Link } from "gatsby"
 
 const Service = () => {
   return (
@@ -27,42 +28,48 @@ const Service = () => {
           <ServiceBackground>
             <div className="services-sub">
               <div className="service">
-                <div className="img-box">
-                  <img src={beard} alt="josdek barbershop beard icon" />
-                </div>
-                <h3>beard trim</h3>
+                <Link to="/" className="link">
+                  <div className="img-box">
+                    <img src={beard} alt="josdek barbershop beard icon" />
+                  </div>
+                  <h3>beard trim</h3>
+                </Link>
                 <p>
                   Well-trimmed beard is a must-have element of every men’s image
                 </p>
               </div>
               <div className="service">
-                <div className="img-box">
-                  <img
-                    src={mustage}
-                    alt="josdek barbershop mustage trim icon"
-                  />
-                </div>
-
-                <h3>mustage trim</h3>
+                <Link to="/" className="link">
+                  <div className="img-box">
+                    <img
+                      src={mustage}
+                      alt="josdek barbershop mustage trim icon"
+                    />
+                  </div>
+                  <h3>mustage trim</h3>
+                </Link>
                 <p>Mustaches also need to be trimmed regularly </p>
               </div>
               <div className="service">
-                <div className="img-box">
-                  <img
-                    src={combScissor}
-                    alt="josdek barbershop traditional haircut icon"
-                  />
-                </div>
-
-                <h3>traditional haircut</h3>
+                <Link to="/" className="link">
+                  <div className="img-box">
+                    <img
+                      src={combScissor}
+                      alt="josdek barbershop traditional haircut icon"
+                    />
+                  </div>
+                  <h3>traditional haircut</h3>
+                </Link>
                 <p>One of the most popular services our barbers provide</p>
               </div>
 
               <div className="service">
-                <div className="img-box">
-                  <img src={razor} alt="josdek barbershop razor icon" />
-                </div>
-                <h3>shaves</h3>
+                <Link to="/" className="link">
+                  <div className="img-box">
+                    <img src={razor} alt="josdek barbershop razor icon" />
+                  </div>
+                  <h3>shaves</h3>
+                </Link>
                 <p>Our shaving services will make you look really handsome</p>
               </div>
             </div>
@@ -121,9 +128,23 @@ const Wrapper = styled.section`
           padding: 3rem 2rem;
           margin: 5rem 0;
 
+          @media screen and (min-width: 900px) {
+            margin: 0;
+          }
+
+          .link {
+            transition: all 0.2s;
+            &:hover {
+              transform: scale(1.1) translateY(-0.4rem);
+            }
+          }
+
           .img-box {
             width: 5rem;
-            justify-self: center;
+            margin: 0 auto;
+            img {
+              height: 100%;
+            }
           }
 
           h3 {
