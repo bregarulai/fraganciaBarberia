@@ -47,7 +47,7 @@ const fadeIn = keyframes`
 const Wrapper = styled.section`
   .bcg {
     /* MUST!!!!!! */
-    min-height: 190vh;
+    min-height: 310vh;
     display: grid;
     place-items: center;
     animation: ${fadeIn} 2s ease-in-out 1 forwards;
@@ -63,48 +63,48 @@ const Wrapper = styled.section`
 
   @media screen and (min-width: 400px) {
     .bcg {
-      min-height: 235vh;
+      min-height: 310vh;
     }
   }
 
   @media screen and (min-width: 500px) {
     .bcg {
-      min-height: 280vh;
+      min-height: 390vh;
     }
   }
 
   @media screen and (min-width: 600px) {
     .bcg {
-      min-height: 340vh;
+      min-height: 425vh;
     }
   }
 
   @media screen and (min-width: 700px) {
     .bcg {
-      min-height: 385vh;
+      min-height: 490vh;
     }
   }
 
   @media screen and (min-width: 800px) {
     .bcg {
-      min-height: 430vh;
+      min-height: 540vh;
     }
   }
   @media screen and (min-width: 900px) {
     .bcg {
-      min-height: 145vh;
+      min-height: 190vh;
     }
   }
 
   @media screen and (min-width: 1100px) {
     .bcg {
-      min-height: 170vh;
+      min-height: 210vh;
     }
   }
 
   @media screen and (min-width: 1200px) {
     .bcg {
-      min-height: 220vh;
+      min-height: 240vh;
     }
   }
 `
