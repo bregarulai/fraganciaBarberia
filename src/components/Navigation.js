@@ -1,8 +1,9 @@
 import { Link, useStaticQuery } from "gatsby"
-import React from "react"
+import React, { useContext } from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
 import { GoThreeBars } from "react-icons/go"
+import { GatsbyContext } from "../context/context"
 
 export const query = graphql`
   {
@@ -17,11 +18,13 @@ export const query = graphql`
 `
 
 const Navigation = () => {
+  const { showSidebar, isSidebarOpen } = useContext(GatsbyContext)
   const {
     file: {
       childImageSharp: { fluid },
     },
   } = useStaticQuery(query)
+  console.log(isSidebarOpen)
 
   return (
     <Wrapper>
@@ -35,9 +38,11 @@ const Navigation = () => {
               alt="josdek barbershop logo"
             />
           </Link>
-          <button className="btn-toggle">
-            <GoThreeBars />
-          </button>
+          {!isSidebarOpen && (
+            <button className="btn-toggle" onClick={showSidebar}>
+              <GoThreeBars />
+            </button>
+          )}
         </div>
       </div>
     </Wrapper>
@@ -46,7 +51,7 @@ const Navigation = () => {
 
 export default Navigation
 
-const Wrapper = styled.nav`
+const Wrapper = styled.header`
   position: relative;
   background: transparent;
   z-index: 1;
@@ -80,11 +85,15 @@ const Wrapper = styled.nav`
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 4rem;
+      font-size: 5rem;
       border: transparent;
       color: var(--color-primary-blue-dark);
       background-color: transparent;
       cursor: pointer;
+
+      @media screen and (min-width: 900px) {
+        display: none;
+      }
     }
   }
 `

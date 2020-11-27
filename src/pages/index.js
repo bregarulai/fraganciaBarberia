@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <About />
       <Service />
-      <Team />
+      {/* <Team /> */}
       <Gallery />
       <Contact />
     </Layout>

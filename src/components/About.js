@@ -123,7 +123,13 @@ const Wrapper = styled.section`
           font-weight: 300;
           font-size: 1.8rem;
           text-align: center;
-          margin-top: 1rem;
+          margin-top: 3rem;
+
+          @media screen and (min-width: 1200px) {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-top: 1rem;
+          }
         }
 
         p {

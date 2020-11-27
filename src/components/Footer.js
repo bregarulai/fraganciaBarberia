@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useContext } from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
 import { Link, useStaticQuery } from "gatsby"
 import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai"
+import { GatsbyContext } from "../context/context"
 
 export const query = graphql`
   {
@@ -17,6 +18,7 @@ export const query = graphql`
 `
 
 const Footer = () => {
+  const { links } = useContext(GatsbyContext)
   const {
     file: {
       childImageSharp: { fluid },
@@ -38,15 +40,16 @@ const Footer = () => {
           </div>
           <div className="sub-info">
             <h4>company info</h4>
-            <Link to="/" className="link">
-              about us
-            </Link>
-            <Link to="/" className="link">
-              meet the team
-            </Link>
-            <Link to="/" className="link">
-              our services
-            </Link>
+
+            {links.map((link, index) => {
+              const { label, url } = link
+              return (
+                <Link key={index} to={url} className="link">
+                  {label}
+                </Link>
+              )
+            })}
+
             <div className="social">
               <div className="facebook">
                 <a href="#">
