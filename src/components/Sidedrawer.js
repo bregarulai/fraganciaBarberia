@@ -13,12 +13,12 @@ const Sidedrawer = () => {
         <MdClose className="icon" />
       </button>
       <div className="background"></div>
-      <nav className="nav">
+      <nav className="nav" onClick={hideSidebar}>
         <ul className="list">
           {links.map((link, index) => {
             const { url, label } = link
             return (
-              <li key={index} className="item">
+              <li key={index} className="item" onClick={hideSidebar}>
                 <Link className="link" to={url}>
                   {label}
                 </Link>

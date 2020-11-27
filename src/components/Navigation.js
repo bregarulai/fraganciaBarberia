@@ -1,5 +1,5 @@
 import { Link, useStaticQuery } from "gatsby"
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
 import { GoThreeBars } from "react-icons/go"
@@ -18,6 +18,7 @@ export const query = graphql`
 `
 
 const Navigation = () => {
+  const [active, setActive] = useState(false)
   const { showSidebar, isSidebarOpen, links } = useContext(GatsbyContext)
   const {
     file: {
@@ -25,6 +26,11 @@ const Navigation = () => {
     },
   } = useStaticQuery(query)
   console.log(isSidebarOpen)
+
+  const toggleActiveClass = () => {
+    const currentState = active
+    setActive(!currentState)
+  }
 
   return (
     <Wrapper>
@@ -46,9 +52,15 @@ const Navigation = () => {
           <div className="nav-links">
             {links.map((link, index) => {
               const { url, label } = link
+
               return (
                 <li key={index} className="item">
-                  <Link className="link" to={url}>
+                  <Link
+                    onClick={toggleActiveClass}
+                    activeClassName="active"
+                    className="link"
+                    to={url}
+                  >
                     {label}
                   </Link>
                 </li>
@@ -120,6 +132,14 @@ const Wrapper = styled.header`
           color: var(--color-primary-blue-dark);
           text-transform: uppercase;
           margin-left: 1rem;
+
+          &:hover {
+            border-bottom: 3px solid var(--color-primary-red);
+          }
+        }
+
+        .active {
+          border-bottom: 3px solid var(--color-primary-red);
         }
       }
     }

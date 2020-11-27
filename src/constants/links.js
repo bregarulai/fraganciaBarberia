@@ -2,6 +2,10 @@ import React from "react"
 
 export default [
   {
+    label: "home",
+    url: "/",
+  },
+  {
     label: "contact us",
     url: "/contact",
   },
