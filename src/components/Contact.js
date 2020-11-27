@@ -68,6 +68,10 @@ const Wrapper = styled.section`
       text-transform: uppercase;
       font-size: 2rem;
       color: var(--color-primary-blue-dark);
+
+      @media screen and (min-width: 600px) {
+        font-size: 3rem;
+      }
     }
 
     .info-container {
@@ -82,6 +86,10 @@ const Wrapper = styled.section`
         font-size: 1.6rem;
         margin: 5rem 0;
         text-align: center;
+
+        @media screen and (min-width: 600px) {
+          font-size: 2rem;
+        }
 
         .address {
           line-height: 1.5;

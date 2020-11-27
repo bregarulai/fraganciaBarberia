@@ -104,6 +104,10 @@ const Wrapper = styled.section`
     &__logo {
       width: 25rem;
       animation: ${moveDown} 1.5s;
+
+      @media screen and (min-width: 900px) {
+        width: 30rem;
+      }
     }
 
     &__heading {
@@ -116,6 +120,14 @@ const Wrapper = styled.section`
         font-weight: 300;
         margin-top: 3.5rem;
         animation: ${moveRight} 1s 1s backwards;
+
+        @media screen and (min-width: 600px) {
+          font-size: 6rem;
+        }
+
+        @media screen and (min-width: 900px) {
+          font-size: 7rem;
+        }
       }
 
       &--secondary {
@@ -126,6 +138,10 @@ const Wrapper = styled.section`
         line-height: 1.1;
         margin-top: 1rem;
         animation: ${moveLeft} 1s 1s backwards;
+
+        @media screen and (min-width: 600px) {
+          font-size: 3rem;
+        }
       }
     }
 
@@ -134,6 +150,10 @@ const Wrapper = styled.section`
       line-height: 1.2;
       margin-top: 1rem;
       animation: ${moveUp} 1s;
+
+      @media screen and (min-width: 600px) {
+        font-size: 2rem;
+      }
     }
   }
 `

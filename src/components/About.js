@@ -88,6 +88,10 @@ const Wrapper = styled.section`
       text-transform: uppercase;
       font-size: 2rem;
       color: var(--color-primary-blue-dark);
+
+      @media screen and (min-width: 600px) {
+        font-size: 3rem;
+      }
     }
 
     &__sections {
@@ -125,8 +129,11 @@ const Wrapper = styled.section`
           text-align: center;
           margin-top: 3rem;
 
+          @media screen and (min-width: 600px) {
+            font-size: 3rem;
+          }
+
           @media screen and (min-width: 1200px) {
-            font-size: 2rem;
             font-weight: 400;
             margin-top: 1rem;
           }
@@ -135,6 +142,10 @@ const Wrapper = styled.section`
         p {
           font-size: 1.6rem;
           margin-top: 1rem;
+
+          @media screen and (min-width: 600px) {
+            font-size: 2rem;
+          }
         }
       }
     }

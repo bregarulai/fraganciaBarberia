@@ -18,7 +18,7 @@ export const query = graphql`
 `
 
 const Navigation = () => {
-  const { showSidebar, isSidebarOpen } = useContext(GatsbyContext)
+  const { showSidebar, isSidebarOpen, links } = useContext(GatsbyContext)
   const {
     file: {
       childImageSharp: { fluid },
@@ -43,6 +43,18 @@ const Navigation = () => {
               <GoThreeBars />
             </button>
           )}
+          <div className="nav-links">
+            {links.map((link, index) => {
+              const { url, label } = link
+              return (
+                <li key={index} className="item">
+                  <Link className="link" to={url}>
+                    {label}
+                  </Link>
+                </li>
+              )
+            })}
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -93,6 +105,22 @@ const Wrapper = styled.header`
 
       @media screen and (min-width: 900px) {
         display: none;
+      }
+    }
+
+    .nav-links {
+      display: none;
+
+      @media screen and (min-width: 900px) {
+        display: flex;
+        align-content: center;
+
+        .link {
+          font-size: 1.8rem;
+          color: var(--color-primary-blue-dark);
+          text-transform: uppercase;
+          margin-left: 1rem;
+        }
       }
     }
   }
