@@ -74,8 +74,8 @@ const Footer = () => {
           </div>
           <div className="copyright">
             <p>
-              &copy; {new Date().getFullYear()} Josdek Barber. Website created
-              by{" "}
+              &copy; {new Date().getFullYear()} Josdek Barbershop. Website
+              created by{" "}
               <a href="http://www.flavioaquino.com" target="_blank">
                 Flavio Aquino
               </a>
