@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
-import { useStaticQuery } from "gatsby"
+import { Link, useStaticQuery } from "gatsby"
 import GalleryBackground from "./GalleryBackground"
 
 export const query = graphql`
   {
-    allContentfulGallery {
+    allContentfulGallery(limit: 6) {
       nodes {
         id: contentful_id
         title
@@ -45,6 +45,9 @@ const Gallery = () => {
                 </div>
               )
             })}
+            <Link to="/gallery" className="btn">
+              view all
+            </Link>
           </div>
         </div>
       </Wrapper>
@@ -86,6 +89,39 @@ const Wrapper = styled.section`
         }
       }
 
+      .btn {
+        font-size: 1.8rem;
+        color: var(--color-gray-light-1);
+        background-color: var(--color-primary-blue-dark);
+        padding: 1rem 5rem;
+        border-radius: 5px;
+        text-transform: uppercase;
+        width: 20rem;
+        text-align: center;
+        justify-self: center;
+        transition: all 0.2s;
+        margin-top: 2rem;
+
+        @media screen and (min-width: 900px) {
+          grid-column: 1 / -1;
+        }
+
+        @media screen and (min-width: 1200px) {
+          grid-area: i;
+        }
+
+        &:hover {
+          background-color: var(--color-primary-red);
+          transform: translateY(-3px);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+          transform: translateY(-1px);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        }
+      }
+
       @media screen and (min-width: 900px) {
         grid-template-columns: 1fr 1fr;
       }
@@ -96,7 +132,8 @@ const Wrapper = styled.section`
           "a b b"
           "a c d"
           "e f f"
-          "e g h";
+          "e g h"
+          "i i i";
         .img-box-0 {
           grid-area: b;
         }

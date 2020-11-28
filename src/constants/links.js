@@ -6,15 +6,15 @@ export default [
     url: "/",
   },
   {
-    label: "contact us",
-    url: "/contact",
-  },
-  {
     label: "our services",
     url: "/services",
   },
   {
     label: "gallery",
     url: "/gallery",
+  },
+  {
+    label: "contact us",
+    url: "/contact",
   },
 ]

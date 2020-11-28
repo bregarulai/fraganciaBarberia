@@ -7,6 +7,8 @@ import Team from "./Team"
 import TeamCard from "./TeamCard"
 import Gallery from "./Gallery"
 import Contact from "./Contact"
+import PageBackground from "./PageBackground"
+import PageGallery from "./PageGallery"
 
 export {
   Layout,
@@ -18,4 +20,6 @@ export {
   TeamCard,
   Gallery,
   Contact,
+  PageBackground,
+  PageGallery,
 }

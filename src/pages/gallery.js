@@ -1,8 +1,13 @@
 import React from "react"
-import { Layout } from "../components"
+import { Layout, PageGallery, PageBackground } from "../components"
 
 const gallery = () => {
-  return <Layout></Layout>
+  return (
+    <Layout>
+      <PageBackground />
+      <PageGallery />
+    </Layout>
+  )
 }
 
 export default gallery
