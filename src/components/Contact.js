@@ -94,7 +94,7 @@ const Wrapper = styled.section`
         .address {
           line-height: 1.5;
           h4 {
-            font-size: 2rem;
+            font-size: 3rem;
             font-weight: 300;
             text-transform: uppercase;
             margin-bottom: 1rem;
@@ -108,7 +108,7 @@ const Wrapper = styled.section`
         .hours {
           margin-top: 3rem;
           h4 {
-            font-size: 2rem;
+            font-size: 3rem;
             font-weight: 300;
             text-transform: uppercase;
             margin-bottom: 1rem;
