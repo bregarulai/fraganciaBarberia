@@ -132,9 +132,11 @@ const Wrapper = styled.header`
           color: var(--color-primary-blue-dark);
           text-transform: uppercase;
           margin-left: 1rem;
+          transition: all 0.2s;
 
           &:hover {
             border-bottom: 3px solid var(--color-primary-red);
+            transform: translateY(-1px);
           }
         }
 

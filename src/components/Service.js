@@ -28,7 +28,7 @@ const Service = () => {
           <ServiceBackground>
             <div className="services-sub">
               <div className="service">
-                <Link to="/" className="link">
+                <Link to="/services" className="link">
                   <div className="img-box">
                     <img src={beard} alt="josdek barbershop beard icon" />
                   </div>
@@ -39,7 +39,7 @@ const Service = () => {
                 </p>
               </div>
               <div className="service">
-                <Link to="/" className="link">
+                <Link to="/services" className="link">
                   <div className="img-box">
                     <img
                       src={mustage}
@@ -51,7 +51,7 @@ const Service = () => {
                 <p>Mustaches also need to be trimmed regularly </p>
               </div>
               <div className="service">
-                <Link to="/" className="link">
+                <Link to="/services" className="link">
                   <div className="img-box">
                     <img
                       src={combScissor}
@@ -64,7 +64,7 @@ const Service = () => {
               </div>
 
               <div className="service">
-                <Link to="/" className="link">
+                <Link to="/services" className="link">
                   <div className="img-box">
                     <img src={razor} alt="josdek barbershop razor icon" />
                   </div>
