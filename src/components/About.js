@@ -27,12 +27,15 @@ const About = () => {
     imageLeft: {
       childImageSharp: { fluid: imageLeft },
     },
-  } = useStaticQuery(query)
-  const {
     imageRight: {
       childImageSharp: { fluid: imageRight },
     },
   } = useStaticQuery(query)
+  // const {
+  //   imageRight: {
+  //     childImageSharp: { fluid: imageRight },
+  //   },
+  // } = useStaticQuery(query)
 
   return (
     <Wrapper id="about" className="section">
