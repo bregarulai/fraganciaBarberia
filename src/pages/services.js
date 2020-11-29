@@ -1,11 +1,12 @@
 import React from "react"
-import { Layout } from "../components/"
+import { Layout, PageService } from "../components/"
 import { PageBackground } from "../components/"
 
 const services = () => {
   return (
     <Layout>
       <PageBackground />
+      <PageService />
     </Layout>
   )
 }
