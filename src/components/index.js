@@ -9,7 +9,6 @@ import Gallery from "./Gallery"
 import Contact from "./Contact"
 import PageBackground from "./PageBackground"
 import PageGallery from "./PageGallery"
-import GoogleMap from "./GoogleMap"
 
 export {
   Layout,
@@ -23,5 +22,4 @@ export {
   Contact,
   PageBackground,
   PageGallery,
-  GoogleMap,
 }

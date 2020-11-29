@@ -1,4 +1,4 @@
-import { Link, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import React, { useContext, useState } from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"

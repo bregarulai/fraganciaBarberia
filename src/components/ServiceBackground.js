@@ -1,4 +1,4 @@
-import { useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import React from "react"
 import styled, { keyframes } from "styled-components"

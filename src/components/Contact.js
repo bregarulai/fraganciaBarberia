@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
-import { useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 export const query = graphql`
   {
@@ -51,7 +51,6 @@ const Contact = () => {
             <Image fluid={fluid} alt="josdek barbershop contact photo" />
           </div>
         </div>
-        {/* <GoogleMap /> */}
       </div>
     </Wrapper>
   )

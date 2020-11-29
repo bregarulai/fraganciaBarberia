@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
-import { Link, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import GalleryBackground from "./GalleryBackground"
 
 export const query = graphql`
