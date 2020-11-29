@@ -13,13 +13,14 @@ const Sidedrawer = () => {
         <MdClose className="icon" />
       </button>
       <div className="background"></div>
+      {/* eslint-disable-next-line */}
       <nav className="nav" onClick={hideSidebar}>
         <ul className="list">
           {links.map((link, index) => {
             const { url, label } = link
             return (
-              <li key={index} className="item" onClick={hideSidebar}>
-                <Link className="link" to={url}>
+              <li key={index} className="item">
+                <Link className="link" to={url} onClick={hideSidebar}>
                   {label}
                 </Link>
               </li>
@@ -27,11 +28,13 @@ const Sidedrawer = () => {
           })}
           <div className="social">
             <div className="facebook">
+              {/* eslint-disable-next-line */}
               <a href="#">
                 <AiOutlineFacebook className="icon" />
               </a>
             </div>
             <div className="instagram">
+              {/* eslint-disable-next-line */}
               <a href="#">
                 <AiOutlineInstagram className="icon" />
               </a>

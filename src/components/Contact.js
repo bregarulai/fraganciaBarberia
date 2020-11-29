@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
 import { useStaticQuery } from "gatsby"
-import GoogleMap from "./GoogleMap"
 
 export const query = graphql`
   {

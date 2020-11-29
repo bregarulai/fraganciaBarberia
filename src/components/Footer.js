@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
-import { Link, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai"
 import { GatsbyContext } from "../context/context"
 
@@ -52,11 +52,13 @@ const Footer = () => {
 
             <div className="social">
               <div className="facebook">
+                {/* eslint-disable-next-line */}
                 <a href="#">
                   <AiOutlineFacebook className="icon" />
                 </a>
               </div>
               <div className="instagram">
+                {/* eslint-disable-next-line */}
                 <a href="#">
                   <AiOutlineInstagram className="icon" />
                 </a>

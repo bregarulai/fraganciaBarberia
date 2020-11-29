@@ -25,7 +25,6 @@ const Navigation = () => {
       childImageSharp: { fluid },
     },
   } = useStaticQuery(query)
-  console.log(isSidebarOpen)
 
   const toggleActiveClass = () => {
     const currentState = active
