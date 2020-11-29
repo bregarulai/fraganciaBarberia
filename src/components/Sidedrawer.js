@@ -29,13 +29,13 @@ const Sidedrawer = () => {
           <div className="social">
             <div className="facebook">
               {/* eslint-disable-next-line */}
-              <a href="#">
+              <a href="https://www.facebook.com/Josdekbarbershop/">
                 <AiOutlineFacebook className="icon" />
               </a>
             </div>
             <div className="instagram">
               {/* eslint-disable-next-line */}
-              <a href="#">
+              <a href="https://www.instagram.com/josdekbarbershop27/">
                 <AiOutlineInstagram className="icon" />
               </a>
             </div>
