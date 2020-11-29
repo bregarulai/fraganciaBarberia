@@ -33,9 +33,9 @@ const Footer = () => {
               <Image fluid={fluid} alt="josdek barbershop logo" />
             </div>
             <div className="address">
-              <p>3234 Orange Blossom Trail</p>
-              <p>Orlando FL 33233</p>
-              <p>405 323 3433</p>
+              <p>8421 South Orange Blossom Trail Suite 229</p>
+              <p>Orlando FL 32809</p>
+              <p>407 844 1446</p>
             </div>
           </div>
           <div className="sub-info">
@@ -76,7 +76,11 @@ const Footer = () => {
             <p>
               &copy; {new Date().getFullYear()} Josdek Barbershop. Website
               created by{" "}
-              <a href="http://www.flavioaquino.com" target="_blank">
+              <a
+                href="http://www.flavioaquino.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Flavio Aquino
               </a>
               .

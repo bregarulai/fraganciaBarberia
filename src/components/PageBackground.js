@@ -60,6 +60,10 @@ const Wrapper = styled.section`
       transparent 100%
     );
     mask-image: linear-gradient(to bottom, white -200%, transparent 100%);
+
+    @media screen and (min-width: 1200px) {
+      min-height: 64vh;
+    }
   }
   .bcg::before {
     opacity: 1;

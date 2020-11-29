@@ -60,6 +60,10 @@ const Wrapper = styled.section`
       margin-top: -12rem;
     }
 
+    @media screen and (min-width: 1200px) {
+      margin-top: -26rem;
+    }
+
     h2 {
       text-align: center;
       text-transform: uppercase;
@@ -92,6 +96,8 @@ const Wrapper = styled.section`
       .img-box {
         .img {
           height: 100%;
+          border-radius: 3px;
+          overflow: hidden;
         }
       }
     }

@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
 import { useStaticQuery } from "gatsby"
+import GoogleMap from "./GoogleMap"
 
 export const query = graphql`
   {
@@ -30,23 +31,20 @@ const Contact = () => {
           <div className="info">
             <div className="address">
               <h4>address</h4>
-              <p>3234 Orange Blossom Trail</p>
-              <p>Orlando FL 33233</p>
-              <p>405 323 3433</p>
+              <p>8421 South Orange Blossom Trail Suite 229</p>
+              <p>Orlando FL 32809</p>
+              <p>407 844 1446</p>
             </div>
             <div className="hours">
               <h4>openning hours</h4>
               <div className="group">
-                <p>Monday – Tuesday</p>
+                <p>Monday – Saturday</p>
                 <p>9am - 7pm</p>
               </div>
+
               <div className="group">
-                <p>Thursday – Saturday</p>
-                <p>9am - 7pm</p>
-              </div>
-              <div className="group">
-                <p>Wednesday</p>
-                <p>Appointment Only</p>
+                <p>Sundays</p>
+                <p>Closed</p>
               </div>
             </div>
           </div>
@@ -54,6 +52,7 @@ const Contact = () => {
             <Image fluid={fluid} alt="josdek barbershop contact photo" />
           </div>
         </div>
+        {/* <GoogleMap /> */}
       </div>
     </Wrapper>
   )

@@ -36,9 +36,9 @@ const Hero = () => {
             </span>
           </h1>
           <div className="hero__info">
-            <p>3234 Orange Blossom Trail</p>
-            <p>Orlando FL 33233</p>
-            <p>405 323 3433</p>
+            <p>8421 South Orange Blossom Trail Suite 229</p>
+            <p>Orlando FL 32809</p>
+            <p>407 844 1446</p>
           </div>
         </article>
       </Background>

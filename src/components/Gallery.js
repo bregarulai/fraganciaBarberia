@@ -6,7 +6,10 @@ import GalleryBackground from "./GalleryBackground"
 
 export const query = graphql`
   {
-    allContentfulGallery(limit: 6) {
+    allContentfulGallery(
+      limit: 8
+      sort: { fields: image___createdAt, order: ASC }
+    ) {
       nodes {
         id: contentful_id
         title
@@ -127,13 +130,13 @@ const Wrapper = styled.section`
       }
 
       @media screen and (min-width: 1200px) {
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
-          "a b b"
-          "a c d"
-          "e f f"
-          "e g h"
-          "i i i";
+          "a a b b"
+          "a a c d"
+          "e e f f"
+          "e e g h"
+          "i i i i";
         .img-box-0 {
           grid-area: b;
         }

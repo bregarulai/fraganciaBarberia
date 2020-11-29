@@ -39,5 +39,13 @@ module.exports = {
         accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    // {
+    //   resolve: `@ccalamos/gatsby-source-googlemaps-static`,
+    //   options: {
+    //     key: process.env.GATSBY_GOOGLE_MAPS_STATIC_API_KEY,
+    //     center: `28.44287,-81.40194`,
+    //     mapID: process.env.GATSBY_GOOGLE_MAPS_ID,
+    //   },
+    // },
   ],
 }
