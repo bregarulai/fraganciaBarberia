@@ -3,7 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
 
-export const query = graphql`
+const query = graphql`
   {
     imageLeft: file(relativePath: { eq: "about-img-1.jpg" }) {
       childImageSharp {

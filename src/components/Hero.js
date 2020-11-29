@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components"
 import Background from "./Background"
 import Image from "gatsby-image"
 
-export const query = graphql`
+const query = graphql`
   {
     file(relativePath: { eq: "logo.png" }) {
       childImageSharp {

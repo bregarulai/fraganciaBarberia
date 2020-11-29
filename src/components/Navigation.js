@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 import { GoThreeBars } from "react-icons/go"
 import { GatsbyContext } from "../context/context"
 
-export const query = graphql`
+const query = graphql`
   {
     file(relativePath: { eq: "logo.png" }) {
       childImageSharp {

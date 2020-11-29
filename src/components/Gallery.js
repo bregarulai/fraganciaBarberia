@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import GalleryBackground from "./GalleryBackground"
 
-export const query = graphql`
+const query = graphql`
   {
     allContentfulGallery(
       limit: 8

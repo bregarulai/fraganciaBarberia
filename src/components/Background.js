@@ -3,7 +3,7 @@ import BackgroundImage from "gatsby-background-image"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 
-export const query = graphql`
+const query = graphql`
   {
     file(relativePath: { eq: "heroBg.jpg" }) {
       childImageSharp {

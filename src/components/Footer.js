@@ -5,7 +5,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai"
 import { GatsbyContext } from "../context/context"
 
-export const query = graphql`
+const query = graphql`
   {
     file(relativePath: { eq: "logo-white.png" }) {
       childImageSharp {

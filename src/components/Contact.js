@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
-export const query = graphql`
+const query = graphql`
   {
     file(relativePath: { eq: "contact.jpg" }) {
       childImageSharp {

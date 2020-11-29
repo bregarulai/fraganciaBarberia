@@ -3,7 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import TeamCard from "./TeamCard"
 
-export const query = graphql`
+const query = graphql`
   {
     allContentfulTeam(sort: { order: ASC, fields: createdAt }) {
       nodes {
