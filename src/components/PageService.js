@@ -58,12 +58,8 @@ const Wrapper = styled.section`
     h2 {
       text-align: center;
       text-transform: uppercase;
-      font-size: 2rem;
+      font-size: 3rem;
       color: var(--color-primary-blue-dark);
-
-      @media screen and (min-width: 600px) {
-        font-size: 3rem;
-      }
     }
 
     .service-grid {

@@ -85,7 +85,7 @@ const Wrapper = styled.section`
     h2 {
       text-align: center;
       text-transform: uppercase;
-      font-size: 2rem;
+      font-size: 3rem;
       color: var(--color-primary-blue-dark);
 
       @media screen and (min-width: 600px) {
@@ -105,12 +105,8 @@ const Wrapper = styled.section`
       }
 
       .text {
-        font-size: 1.6rem;
+        font-size: 2.2rem;
         margin: 5rem 0;
-
-        @media screen and (min-width: 600px) {
-          font-size: 2rem;
-        }
 
         @media screen and (min-width: 900px) {
           width: 80%;
@@ -156,23 +152,15 @@ const Wrapper = styled.section`
           }
 
           h3 {
-            font-size: 1.8rem;
+            font-size: 2.7rem;
             text-transform: uppercase;
             font-weight: 300;
             color: var(--color-primary-red);
             margin: 1rem 0;
-
-            @media screen and (min-width: 600px) {
-              font-size: 2rem;
-            }
           }
 
           p {
-            font-size: 1.6rem;
-
-            @media screen and (min-width: 600px) {
-              font-size: 1.8rem;
-            }
+            font-size: 2.2rem;
           }
         }
       }

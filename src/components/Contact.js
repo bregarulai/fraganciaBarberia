@@ -72,7 +72,7 @@ const Wrapper = styled.section`
     h2 {
       text-align: center;
       text-transform: uppercase;
-      font-size: 2rem;
+      font-size: 3rem;
       color: var(--color-primary-blue-dark);
 
       @media screen and (min-width: 600px) {
@@ -89,7 +89,7 @@ const Wrapper = styled.section`
       }
 
       .info {
-        font-size: 1.6rem;
+        font-size: 2.2rem;
         margin: 5rem 0;
         text-align: center;
 

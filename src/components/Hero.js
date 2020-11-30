@@ -115,7 +115,7 @@ const Wrapper = styled.section`
 
       &--primary {
         display: block;
-        font-size: 5rem;
+        font-size: 6rem;
         line-height: 1.1;
         font-weight: 300;
         margin-top: 3.5rem;
@@ -133,7 +133,7 @@ const Wrapper = styled.section`
       &--secondary {
         display: block;
         color: var(--color-primary-red);
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 300;
         line-height: 1.1;
         margin-top: 1rem;
@@ -146,7 +146,7 @@ const Wrapper = styled.section`
     }
 
     &__info {
-      font-size: 1.6rem;
+      font-size: 2.2rem;
       line-height: 1.2;
       margin-top: 1rem;
       animation: ${moveUp} 1s;

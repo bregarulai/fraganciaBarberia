@@ -67,23 +67,15 @@ const Wrapper = styled.section`
     h2 {
       text-align: center;
       text-transform: uppercase;
-      font-size: 2rem;
+      font-size: 3rem;
       color: var(--color-primary-blue-dark);
-
-      @media screen and (min-width: 600px) {
-        font-size: 3rem;
-      }
     }
 
     .gallery-grid {
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 2rem;
-      margin-top: 3rem;
-
-      @media screen and (min-width: 600px) {
-        margin-top: 5rem;
-      }
+      margin-top: 5rem;
 
       @media screen and (min-width: 900px) {
         grid-template-columns: 1fr 1fr;

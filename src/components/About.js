@@ -67,14 +67,14 @@ const About = () => {
               <h2>most accessible barbershop in orlando</h2>
               <p>
                 Our modernly equipped Barbershop is located in one step away
-                from the Florida Mall – on 3322 Orange Blossom Trail and Sand
-                Lake Rd. We are open 6 days a week from early morning until
-                evening, making it possible to get a haircut during the hours
-                most convenient for you. We won`t waste even one moment of your
-                time. We do our work, you enjoy your time and your style. Here
-                at Josdek Barbershop we respect your time and try our best for
-                our services to be most accessible, most enjoyable and
-                convenient Orlando barber shop ever.
+                from the Florida Mall – on 8421 South Orange Blossom Trail Suite
+                229 and Sand Lake Rd. We are open 6 days a week from early
+                morning until evening, making it possible to get a haircut
+                during the hours most convenient for you. We won`t waste even
+                one moment of your time. We do our work, you enjoy your time and
+                your style. Here at Josdek Barbershop we respect your time and
+                try our best for our services to be most accessible, most
+                enjoyable and convenient Orlando barber shop ever.
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Wrapper = styled.section`
     &__title {
       text-align: center;
       text-transform: uppercase;
-      font-size: 2rem;
+      font-size: 3rem;
       color: var(--color-primary-blue-dark);
 
       @media screen and (min-width: 600px) {
@@ -128,7 +128,7 @@ const Wrapper = styled.section`
         h2 {
           text-transform: uppercase;
           font-weight: 300;
-          font-size: 1.8rem;
+          font-size: 2.8rem;
           text-align: center;
           margin-top: 3rem;
 
@@ -143,7 +143,7 @@ const Wrapper = styled.section`
         }
 
         p {
-          font-size: 1.6rem;
+          font-size: 2.2rem;
           margin-top: 1rem;
 
           @media screen and (min-width: 600px) {
