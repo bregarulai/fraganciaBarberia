@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+import { WrappedMap } from "./Map"
 
 const query = graphql`
   {
@@ -50,6 +51,14 @@ const Contact = () => {
           <div className="img-box">
             <Image fluid={fluid} alt="josdek barbershop contact photo" />
           </div>
+        </div>
+        <div className="map">
+          <WrappedMap
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `100%` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
         </div>
       </div>
     </Wrapper>
@@ -123,6 +132,17 @@ const Wrapper = styled.section`
         .img-box {
           margin-top: 5rem;
         }
+      }
+    }
+
+    .map {
+      width: 100%;
+      height: 40rem;
+      margin: 0 auto;
+      margin-top: 5rem;
+
+      @media screen and (min-width: 900px) {
+        height: 60rem;
       }
     }
   }
