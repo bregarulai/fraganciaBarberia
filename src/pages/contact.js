@@ -1,8 +1,12 @@
 import React from "react"
-import { Layout } from "../components"
+import { Layout, SEO } from "../components"
 
 const contact = () => {
-  return <Layout></Layout>
+  return (
+    <Layout>
+      <SEO title="Contact" />
+    </Layout>
+  )
 }
 
 export default contact

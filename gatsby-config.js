@@ -10,6 +10,14 @@ require("dotenv").config({
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Josdek Barbershop`,
+    description: `Josdek Barbershop always offers professional quality for all of our customers.  Our modernly equipped Barbershop is located in one step away from the Florida Mall – on 8421 South Orange Blossom Trail Suite 229 and Sand Lake Rd.`,
+    author: `John`,
+    titleTemplate: `%s | Josdek Barbershop`,
+    url: `http://www.josdekbarbershop.com`,
+    image: `barberia.png`,
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     {

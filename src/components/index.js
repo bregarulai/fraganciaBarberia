@@ -10,6 +10,7 @@ import Contact from "./Contact"
 import PageBackground from "./PageBackground"
 import PageGallery from "./PageGallery"
 import PageService from "./PageService"
+import SEO from "./SEO"
 
 export {
   Layout,
@@ -24,4 +25,5 @@ export {
   PageBackground,
   PageGallery,
   PageService,
+  SEO,
 }
