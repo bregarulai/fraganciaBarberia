@@ -39,7 +39,7 @@ const SEO = ({ title, description }) => {
     image: defaultImage,
     url: `${siteUrl}${pathname}`,
     keywords:
-      "Orlando barber, Orlando barbershop, haircut, shave, barber, barbershop, south orlando, kisseemmee, Dr Phillips, Lake Eola, best Orlando barber, best Orlando barbershop, Downtown Orlando, Downtown Orlando barber, Downtown Orlando barbershop",
+      "Orlando barber, Orlando barbershop, Josdek, Josdek barbershop, haircut, shave, barber, barbershop, south Orlando, kisseemmee, Dr Phillips, best Orlando barber, best Orlando barbershop",
   }
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
