@@ -15,7 +15,7 @@ module.exports = {
     description: `Josdek Barbershop always offers professional quality for all of our customers.  Our modernly equipped Barbershop is located in one step away from the Florida Mall – on 8421 South Orange Blossom Trail Suite 229 and Sand Lake Rd.`,
     author: `John`,
     titleTemplate: `%s | Josdek Barbershop`,
-    url: `http://www.josdekbarbershop.com`,
+    url: `https://practical-saha-15c775.netlify.app/`,
     image: `barberia.png`,
   },
   plugins: [
