@@ -11,7 +11,7 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Josdek Barbershop`,
+    title: `Josdek Barbershop open Monday to Saturday`,
     description: `Josdek Barbershop professional quality for all of our customers. Located in one step away from the Florida Mall`,
     author: `John`,
     titleTemplate: `%s | Josdek Barbershop`,
