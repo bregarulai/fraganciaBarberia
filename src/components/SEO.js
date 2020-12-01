@@ -38,20 +38,19 @@ const SEO = ({ title, description }) => {
     description: description || defaultDescription,
     image: defaultImage,
     url: `${siteUrl}${pathname}`,
+    keywords:
+      "Orlando barber, Orlando barbershop, haircut, shave, barber, barbershop, south orlando, kisseemmee, Dr Phillips, Lake Eola, best Orlando barber, best Orlando barbershop, Downtown Orlando, Downtown Orlando barber, Downtown Orlando barbershop",
   }
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+      <meta name="keywords" content={seo.keywords} />
       {seo.url && <meta property="og:url" content={seo.url} />}
 
       <meta property="og:type" content="website" />
 
-      {seo.title && <meta property="og:title" content={seo.title} />}
-
-      {seo.description && (
-        <meta property="og:description" content={seo.description} />
-      )}
+      {seo.title && <meta property="og:title" content={defaultTitle} />}
 
       {seo.description && (
         <meta property="og:description" content={seo.description} />
@@ -63,7 +62,7 @@ const SEO = ({ title, description }) => {
 
       <meta name="twitter:creator" content={author} />
 
-      {seo.title && <meta name="twitter:title" content={seo.title} />}
+      {seo.title && <meta name="twitter:title" content={defaultTitle} />}
 
       {seo.description && (
         <meta name="twitter:description" content={seo.description} />

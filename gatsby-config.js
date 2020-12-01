@@ -12,7 +12,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Josdek Barbershop`,
-    description: `Josdek Barbershop always offers professional quality for all of our customers.  Our modernly equipped Barbershop is located in one step away from the Florida Mall – on 8421 South Orange Blossom Trail Suite 229 and Sand Lake Rd.`,
+    description: `Josdek Barbershop professional quality for all of our customers. Located in one step away from the Florida Mall`,
     author: `John`,
     titleTemplate: `%s | Josdek Barbershop`,
     url: `https://practical-saha-15c775.netlify.app/`,
