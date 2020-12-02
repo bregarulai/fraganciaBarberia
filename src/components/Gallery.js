@@ -13,6 +13,7 @@ const query = graphql`
       nodes {
         id: contentful_id
         title
+        slug
         image {
           fluid {
             ...GatsbyContentfulFluid
@@ -40,12 +41,18 @@ const Gallery = () => {
               const {
                 id,
                 title,
+                slug,
                 image: { fluid },
               } = image
               return (
-                <div key={id} className={`img-box img-box-${index}`}>
-                  <Image className="img" fluid={fluid} alt={title} />
-                </div>
+                <Link
+                  to={`/gallery/${slug}`}
+                  className={`img-link link-${index}`}
+                >
+                  <div key={id} className={`img-box img-box-${index}`}>
+                    <Image className="img" fluid={fluid} alt={title} />
+                  </div>
+                </Link>
               )
             })}
             <Link to="/gallery" className="btn">
@@ -88,17 +95,20 @@ const Wrapper = styled.section`
         filter: blur(4px);
       }
 
-      .img-box {
-        border-radius: 3px;
-        overflow: hidden;
+      .img-link {
+        display: grid;
+        .img-box {
+          border-radius: 3px;
+          overflow: hidden;
 
-        .img {
-          height: 100%;
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-        }
+          .img {
+            height: 100%;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          }
 
-        &:hover {
-          transform: scale(1.1) translateY(-0.5rem);
+          &:hover {
+            transform: scale(1.1) translateY(-0.5rem);
+          }
         }
       }
 
@@ -147,22 +157,22 @@ const Wrapper = styled.section`
           "e e f f"
           "e e g h"
           "i i i i";
-        .img-box-0 {
+        .link-0 {
           grid-area: b;
         }
-        .img-box-1 {
+        .link-1 {
           grid-area: a;
         }
-        .img-box-2 {
+        .link-2 {
           grid-area: c;
         }
-        .img-box-3 {
+        .link-3 {
           grid-area: d;
         }
-        .img-box-4 {
+        .link-4 {
           grid-area: e;
         }
-        .img-box-5 {
+        .link-5 {
           grid-area: f;
         }
       }
