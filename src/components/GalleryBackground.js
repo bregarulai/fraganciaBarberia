@@ -51,11 +51,11 @@ const Wrapper = styled.section`
     display: grid;
     place-items: center;
     animation: ${fadeIn} 2s ease-in-out 1 forwards;
-    -webkit-filter: blur(0.5rem);
-    -moz-filter: blur(0.5rem);
-    -o-filter: blur(0.5rem);
-    -ms-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+    -webkit-filter: blur(0.8rem);
+    -moz-filter: blur(0.8rem);
+    -o-filter: blur(0.8rem);
+    -ms-filter: blur(0.8rem);
+    filter: blur(0.8rem);
   }
   .bcg::before {
     opacity: 1;

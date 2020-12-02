@@ -75,8 +75,18 @@ const Wrapper = styled.section`
     .gallery-grid {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 2rem;
+      grid-gap: 1.5rem;
       margin-top: 5rem;
+      transition: all 0.5s;
+
+      &:hover .img-box:not(:hover) {
+        transform: scale(0.9);
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+      }
 
       .img-box {
         border-radius: 3px;
@@ -85,6 +95,10 @@ const Wrapper = styled.section`
         .img {
           height: 100%;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        }
+
+        &:hover {
+          transform: scale(1.1) translateY(-0.5rem);
         }
       }
 
