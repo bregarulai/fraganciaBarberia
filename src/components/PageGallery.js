@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
@@ -9,6 +9,7 @@ const query = graphql`
       nodes {
         id: contentful_id
         title
+        slug
         image {
           fluid {
             ...GatsbyContentfulFluid
@@ -34,12 +35,15 @@ const PageGallery = () => {
             const {
               id,
               title,
+              slug,
               image: { fluid },
             } = image
             return (
-              <div key={id} className={`img-box img-box-${index}`}>
-                <Image className="img" fluid={fluid} alt={title} />
-              </div>
+              <Link key={id} to={`/gallery/${slug}`} className="img-link">
+                <div className={`img-box img-box-${index}`}>
+                  <Image className="img" fluid={fluid} alt={title} />
+                </div>
+              </Link>
             )
           })}
         </div>
@@ -77,6 +81,15 @@ const Wrapper = styled.section`
       grid-gap: 2rem;
       margin-top: 5rem;
 
+      &:hover .img-box:not(:hover) {
+        transform: scale(0.9);
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+      }
+
       @media screen and (min-width: 900px) {
         grid-template-columns: 1fr 1fr;
       }
@@ -91,6 +104,14 @@ const Wrapper = styled.section`
           border-radius: 3px;
           overflow: hidden;
         }
+
+        &:hover {
+          transform: scale(1.1) translateY(-0.5rem);
+        }
+      }
+
+      .img-link {
+        display: grid;
       }
     }
   }

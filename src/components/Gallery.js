@@ -46,10 +46,11 @@ const Gallery = () => {
               } = image
               return (
                 <Link
+                  key={id}
                   to={`/gallery/${slug}`}
                   className={`img-link link-${index}`}
                 >
-                  <div key={id} className={`img-box img-box-${index}`}>
+                  <div className={`img-box img-box-${index}`}>
                     <Image className="img" fluid={fluid} alt={title} />
                   </div>
                 </Link>
