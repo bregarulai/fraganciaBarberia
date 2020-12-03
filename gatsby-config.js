@@ -15,7 +15,7 @@ module.exports = {
     description: `Josdek Barbershop professional quality for all of our customers. Located in one step away from the Florida Mall`,
     author: `John`,
     titleTemplate: `%s | Josdek Barbershop open Monday to Saturday`,
-    url: `https://practical-saha-15c775.netlify.app`,
+    url: `http://www.josdekbarbershop.com`,
     image: `barberia.png`,
   },
   plugins: [
@@ -51,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://practical-saha-15c775.netlify.app`,
+        siteUrl: `http://www.josdekbarbershop.com`,
       },
     },
   ],
