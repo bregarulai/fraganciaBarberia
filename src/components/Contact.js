@@ -33,7 +33,15 @@ const Contact = () => {
               <h4>address</h4>
               <p>8421 South Orange Blossom Trail Suite 229</p>
               <p>Orlando FL 32809</p>
-              <p>407 844 1446</p>
+              <div
+                className="phone-info"
+                itemscope
+                itemtype="https://schema.org/LocalBusiness"
+              >
+                <span itemprop="telephone">
+                  <a href="tel:+14078441446">407 844 1446</a>
+                </span>
+              </div>
             </div>
             <div className="hours">
               <h4>openning hours</h4>
@@ -100,6 +108,11 @@ const Wrapper = styled.section`
             font-weight: 300;
             text-transform: uppercase;
             margin-bottom: 1rem;
+          }
+
+          a {
+            color: var(--color-gray-dark-3);
+            margin-top: 1rem;
           }
 
           p:last-child {

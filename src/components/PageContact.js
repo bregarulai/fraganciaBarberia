@@ -14,7 +14,16 @@ const PageContact = () => {
               <h4>address</h4>
               <p>8421 South Orange Blossom Trail Suite 229</p>
               <p>Orlando FL 32809</p>
-              <p>407 844 1446</p>
+              <div
+                className="phone-info"
+                itemscope
+                itemtype="https://schema.org/LocalBusiness"
+              >
+                <h1 itemprop="name">Josdek Barbershop</h1>
+                <span itemprop="telephone">
+                  <a href="tel:+14078441446">407 844 1446</a>
+                </span>
+              </div>
             </div>
             <div className="hours">
               <h4>openning hours</h4>
@@ -86,6 +95,20 @@ const Wrapper = styled.section`
 
           p:last-child {
             margin-top: 1rem;
+          }
+
+          .phone-info {
+            h1 {
+              color: var(--color-primary-blue-dark);
+              margin-top: 2rem;
+              font-size: 4rem;
+              line-height: 1.2;
+            }
+
+            a {
+              color: var(--color-gray-dark-3);
+              margin-top: 1rem;
+            }
           }
         }
 
