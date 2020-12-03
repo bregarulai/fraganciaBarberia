@@ -1,33 +1,14 @@
 import React from "react"
 import styled from "styled-components"
-import Image from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
 import { WrappedMap } from "./Map"
 
-const query = graphql`
-  {
-    file(relativePath: { eq: "contact.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
-const Contact = () => {
-  const {
-    file: {
-      childImageSharp: { fluid },
-    },
-  } = useStaticQuery(query)
+const PageContact = () => {
   return (
     <Wrapper className="section">
       <div className="section-center contact-section">
         <h2>contact us</h2>
         <div className="underline"></div>
-        <div className="info-container">
+        <div className="content">
           <div className="info">
             <div className="address">
               <h4>address</h4>
@@ -48,17 +29,15 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="img-box">
-            <Image fluid={fluid} alt="josdek barbershop contact photo" />
+
+          <div className="map">
+            <WrappedMap
+              googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
+              loadingElement={<div style={{ height: `100%` }} />}
+              containerElement={<div style={{ height: `100%` }} />}
+              mapElement={<div style={{ height: `100%` }} />}
+            />
           </div>
-        </div>
-        <div className="map">
-          <WrappedMap
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
-            loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div style={{ height: `100%` }} />}
-            mapElement={<div style={{ height: `100%` }} />}
-          />
         </div>
       </div>
     </Wrapper>
@@ -67,31 +46,34 @@ const Contact = () => {
 
 const Wrapper = styled.section`
   .contact-section {
-    padding-bottom: 3rem;
+    margin-top: -20rem;
+
+    @media screen and (min-width: 600px) {
+      margin-top: -17rem;
+    }
+
+    @media screen and (min-width: 900px) {
+      margin-top: -12rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: -26rem;
+    }
 
     h2 {
       text-align: center;
       text-transform: uppercase;
       font-size: 3rem;
       color: var(--color-primary-blue-dark);
-
-      @media screen and (min-width: 600px) {
-        font-size: 3rem;
-      }
     }
 
-    .info-container {
-      @media screen and (min-width: 900px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        margin-top: 5rem;
-      }
+    .content {
+      margin: 0 auto;
+      text-align: center;
 
       .info {
         font-size: 2.2rem;
         margin: 5rem 0;
-        text-align: center;
 
         .address {
           line-height: 1.5;
@@ -124,24 +106,20 @@ const Wrapper = styled.section`
             margin-bottom: 1rem;
           }
         }
-
-        .img-box {
-          margin-top: 5rem;
-        }
       }
-    }
 
-    .map {
-      width: 100%;
-      height: 40rem;
-      margin: 0 auto;
-      margin: 5rem 0;
+      .map {
+        width: 100%;
+        height: 40rem;
+        margin: 0 auto;
+        margin: 5rem 0;
 
-      @media screen and (min-width: 900px) {
-        height: 60rem;
+        @media screen and (min-width: 900px) {
+          height: 60rem;
+        }
       }
     }
   }
 `
 
-export default Contact
+export default PageContact

@@ -11,6 +11,7 @@ import PageBackground from "./PageBackground"
 import PageGallery from "./PageGallery"
 import PageService from "./PageService"
 import SEO from "./SEO"
+import PageContact from "./PageContact"
 
 export {
   Layout,
@@ -26,4 +27,5 @@ export {
   PageGallery,
   PageService,
   SEO,
+  PageContact,
 }
