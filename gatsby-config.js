@@ -19,6 +19,7 @@ module.exports = {
     image: `barberia.png`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
