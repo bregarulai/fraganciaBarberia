@@ -15,7 +15,7 @@ module.exports = {
     description: `Josdek Barbershop professional quality for all of our customers. Located in one step away from the Florida Mall`,
     author: `John`,
     titleTemplate: `%s | Josdek Barbershop open Monday to Saturday`,
-    url: `http://www.josdekbarbershop.com`,
+    siteUrl: `http://www.josdekbarbershop.com`,
     image: `barberia.png`,
   },
   plugins: [
