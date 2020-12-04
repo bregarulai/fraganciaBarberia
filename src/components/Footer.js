@@ -85,7 +85,7 @@ const Footer = () => {
           <div className="copyright">
             <p>
               &copy; {new Date().getFullYear()} Josdek Barbershop. Website
-              created by{" "}
+              created by
               <a
                 href="http://www.flavioaquino.com"
                 target="_blank"
