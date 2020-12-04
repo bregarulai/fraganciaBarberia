@@ -38,6 +38,14 @@ module.exports = {
         precachePages: [`/contact/`, `/`],
       },
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "http://www.josdekbarbershop.com`",
+        sitemap: "http://www.josdekbarbershop.com`/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-google-analytics`,
