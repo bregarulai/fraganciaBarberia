@@ -20,6 +20,24 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Josdek Barbershop`,
+        short_name: `Barbershop`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+
+        display: `standalone`,
+        icon: `src/images/logo.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/contact/`, `/`],
+      },
+    },
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-google-analytics`,
