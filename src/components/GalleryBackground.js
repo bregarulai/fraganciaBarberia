@@ -23,14 +23,16 @@ const GalleryBackground = ({ children, image }) => {
   } = useStaticQuery(query)
   return (
     <Wrapper>
-      <BackgroundImage
-        Tag="div"
-        fluid={image || fluid}
-        className="bcg"
-        preserveStackingContext={true}
-      >
-        {children}
-      </BackgroundImage>
+      <div className="bg-container">
+        <BackgroundImage
+          Tag="div"
+          fluid={image || fluid}
+          className="bcg"
+          preserveStackingContext={true}
+        >
+          {children}
+        </BackgroundImage>
+      </div>
     </Wrapper>
   )
 }
@@ -45,6 +47,9 @@ const fadeIn = keyframes`
 `
 
 const Wrapper = styled.section`
+  .bg-container {
+    overflow: hidden;
+  }
   .bcg {
     /* MUST!!!!!! */
     min-height: 365vh;

@@ -8,7 +8,7 @@ const query = graphql`
   {
     file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -40,10 +40,10 @@ const Hero = () => {
             <p>Orlando FL 32809</p>
             <div
               className="phone-info"
-              itemscope
-              itemtype="https://schema.org/LocalBusiness"
+              itemScope
+              itemType="https://schema.org/LocalBusiness"
             >
-              <span itemprop="telephone">
+              <span itemProp="telephone">
                 <a href="tel:+14078441446">407 844 1446</a>
               </span>
             </div>

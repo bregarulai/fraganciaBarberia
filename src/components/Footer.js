@@ -35,7 +35,15 @@ const Footer = () => {
             <div className="address">
               <p>8421 South Orange Blossom Trail Suite 229</p>
               <p>Orlando FL 32809</p>
-              <p>407 844 1446</p>
+              <div
+                className="phone-info"
+                itemScope
+                itemType="https://schema.org/LocalBusiness"
+              >
+                <span itemProp="telephone">
+                  <a href="tel:+14078441446">407 844 1446</a>
+                </span>
+              </div>
             </div>
           </div>
           <div className="sub-info">
@@ -131,6 +139,13 @@ const Wrapper = styled.section`
           line-height: 1.5;
           text-align: center;
           margin-top: 2rem;
+
+          .phone-info {
+            a {
+              color: inherit;
+              margin-top: 1rem;
+            }
+          }
         }
       }
 

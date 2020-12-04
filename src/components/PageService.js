@@ -11,7 +11,7 @@ const query = graphql`
         contentful_id
         title
         image {
-          fluid {
+          fluid(maxWidth: 600) {
             ...GatsbyContentfulFluid
           }
         }

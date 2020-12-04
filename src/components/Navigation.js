@@ -9,7 +9,7 @@ const query = graphql`
   {
     file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -135,7 +135,6 @@ const Wrapper = styled.header`
 
           &:hover {
             border-bottom: 3px solid var(--color-primary-red);
-            transform: translateY(-1px);
           }
         }
 

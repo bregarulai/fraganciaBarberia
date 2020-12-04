@@ -16,11 +16,11 @@ const PageContact = () => {
               <p>Orlando FL 32809</p>
               <div
                 className="phone-info"
-                itemscope
-                itemtype="https://schema.org/LocalBusiness"
+                itemScope
+                itemType="https://schema.org/LocalBusiness"
               >
-                <h1 itemprop="name">Josdek Barbershop</h1>
-                <span itemprop="telephone">
+                <h1 itemProp="name">Josdek Barbershop</h1>
+                <span itemProp="telephone">
                   <a href="tel:+14078441446">407 844 1446</a>
                 </span>
               </div>
