@@ -74,28 +74,15 @@ const SEO = ({ title, description }) => {
       <script type="application/ld+json">
         {`
         {
-          "@context": "https://schema.org",
           "@type": "Barbershop",
           "url": "https://www.josdekbarbershop.com/",
           "name": "Josdek Barbershop",
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+1407-844-1446",
+            "telephone": "+1407-844-1446"
+           
           },
-           "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-          ],
-          "opens": "09:00",
-          "closes": "19:00"
-        },    
+          "image":"${image}",    
          "address": {
         "@type": "PostalAddress",
         "streetAddress": "8421 South Orange Blossom Trail Suite 229",
@@ -104,7 +91,22 @@ const SEO = ({ title, description }) => {
         "postalCode": "32809",
         "addressCountry": "US"
       },
+         "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "19:00"
         }
+	]
+}
       `}
       </script>
     </Helmet>
