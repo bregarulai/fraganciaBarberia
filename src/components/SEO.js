@@ -39,7 +39,7 @@ const SEO = ({ title, description }) => {
     image: defaultImage,
     url: `${siteUrl}${pathname}`,
     keywords:
-      "Orlando barber, barbershop Orlando, barbershop Orlando fl, barber Orlando, barber Orlando fl, barberia, barberia Orlando, Orlando barberia, barberia Orlando fl, barbero, barbero Orlando, barbero Orlando fl, barbero dominicano, barbero dominicano Orlando, dominican barbershop, dominican barbershop Orlando, dominican barbershop Orlando fl, Orlando barbershop, Josdek, Josdek barbershop, haircut, shave, barber, barbershop, south Orlando, kisseemmee, Dr Phillips, best Orlando barber, best Orlando barbershop",
+      "Orlando barber, barbershop Orlando, barbershop Orlando fl, barber Orlando, barber Orlando fl, barberia, barberia Orlando, Orlando barberia, barbershop florida mall, barbero",
   }
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>

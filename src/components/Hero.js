@@ -54,22 +54,15 @@ const Hero = () => {
   )
 }
 
-const moveDown = keyframes`
+const fadeIn = keyframes`
     0% {
-        transform: translateY(-30rem);
+        opacity: 0;
     }
     100%  {
-        transform: translateY(0);
+        opacity: 1;
     }
 `
-const moveUp = keyframes`
-    0% {
-        transform: translateY(30rem);
-    }
-    100%  {
-        transform: translateY(0);
-    }
-`
+
 const moveRight = keyframes`
     0% {
         transform: translateX(-30rem);
@@ -111,7 +104,7 @@ const Wrapper = styled.section`
 
     &__logo {
       width: 25rem;
-      animation: ${moveDown} 1.5s;
+      animation: ${fadeIn} 0.5s;
 
       @media screen and (min-width: 900px) {
         width: 30rem;
@@ -127,7 +120,7 @@ const Wrapper = styled.section`
         line-height: 1.1;
         font-weight: 300;
         margin-top: 3.5rem;
-        animation: ${moveRight} 1s 1s backwards;
+        animation: ${moveRight} 0.5s 0.5s backwards;
 
         @media screen and (min-width: 600px) {
           font-size: 6rem;
@@ -145,7 +138,7 @@ const Wrapper = styled.section`
         font-weight: 300;
         line-height: 1.1;
         margin-top: 1rem;
-        animation: ${moveLeft} 1s 1s backwards;
+        animation: ${moveLeft} 0.5s 0.5s backwards;
 
         @media screen and (min-width: 600px) {
           font-size: 3rem;
@@ -157,7 +150,7 @@ const Wrapper = styled.section`
       font-size: 2.2rem;
       line-height: 1.2;
       margin-top: 1rem;
-      animation: ${moveUp} 1s;
+      animation: ${fadeIn} 0.5s;
 
       @media screen and (min-width: 600px) {
         font-size: 2rem;

@@ -51,7 +51,7 @@ const Wrapper = styled.section`
     margin-top: -15rem;
     display: grid;
     place-items: center;
-    animation: ${fadeIn} 2s ease-in-out 1 forwards;
+    animation: ${fadeIn} 0.5s ease-in-out 1 forwards;
   }
   .bcg::before {
     opacity: 1;
