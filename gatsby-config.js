@@ -21,7 +21,7 @@ module.exports = {
         short_name: `Barbershop`,
         start_url: `/`,
         background_color: `#f7f0eb`,
-
+        theme_color: `#0F1131`,
         display: `standalone`,
         icon: `src/images/logo.png`,
       },
@@ -71,5 +71,6 @@ module.exports = {
         siteUrl: `http://www.josdekbarbershop.com`,
       },
     },
+    `gatsby-plugin-preact`,
   ],
 }
