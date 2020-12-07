@@ -9,7 +9,7 @@ const Sidedrawer = () => {
   const { hideSidebar, isSidebarOpen, links } = useContext(GatsbyContext)
   return (
     <Wrapper isSidebarOpen={isSidebarOpen}>
-      <button onClick={hideSidebar}>
+      <button aria-label="close button for menu" onClick={hideSidebar}>
         <MdClose className="icon" />
       </button>
       <div className="background"></div>

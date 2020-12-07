@@ -44,7 +44,11 @@ const Navigation = () => {
             />
           </Link>
           {!isSidebarOpen && (
-            <button className="btn-toggle" onClick={showSidebar}>
+            <button
+              aria-label="hamburger button"
+              className="btn-toggle"
+              onClick={showSidebar}
+            >
               <GoThreeBars />
             </button>
           )}
