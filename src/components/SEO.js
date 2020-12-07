@@ -42,6 +42,23 @@ const SEO = ({ title, description }) => {
     keywords:
       "Orlando barber, barbershop Orlando, barbershop Orlando fl, barber Orlando, barber Orlando fl, barberia, barberia Orlando, Orlando barberia, barbershop florida mall, barbero",
   }
+
+  const schemaOrgWebPage = {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    url: siteUrl,
+    headline:
+      "Josdek Barbershop most enjoyable and convenient Orlando barbershop",
+    inLanguage: "en",
+    mainEntityOfPage: siteUrl + pathname,
+    description: defaultDescription,
+    name: defaultTitle,
+
+    image: {
+      "@type": "ImageObject",
+      url: `${siteUrl}${image}`,
+    },
+  }
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" content={seo.description} />
@@ -72,42 +89,7 @@ const SEO = ({ title, description }) => {
       {seo.image && <meta name="twitter:image" content={seo.image} />}
 
       <script type="application/ld+json">
-        {`
-        {
-          "@type": "Barbershop",
-          "url": "https://www.josdekbarbershop.com/",
-          "name": "Josdek Barbershop",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1407-844-1446"
-           
-          },
-          "image":"${image}",    
-         "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "8421 South Orange Blossom Trail Suite 229",
-        "addressLocality": "Orlando",
-        "addressRegion": "FL",
-        "postalCode": "32809",
-        "addressCountry": "US"
-      },
-         "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday"
-          ],
-          "opens": "09:00",
-          "closes": "19:00"
-        }
-	]
-}
-      `}
+        {JSON.stringify(schemaOrgWebPage)}
       </script>
     </Helmet>
   )
