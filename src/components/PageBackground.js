@@ -61,6 +61,12 @@ const Wrapper = styled.section`
     );
     mask-image: linear-gradient(to bottom, white -200%, transparent 100%);
 
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
     @media screen and (min-width: 1200px) {
       min-height: 64vh;
     }
