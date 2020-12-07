@@ -15,7 +15,7 @@ const query = graphql`
         title
         slug
         image {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 300) {
             ...GatsbyContentfulFluid
           }
         }

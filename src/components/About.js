@@ -7,14 +7,14 @@ const query = graphql`
   {
     imageLeft: file(relativePath: { eq: "about-img-1.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     imageRight: file(relativePath: { eq: "about-img-2.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
