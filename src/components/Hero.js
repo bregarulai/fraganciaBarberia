@@ -8,7 +8,7 @@ const query = graphql`
   {
     file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
-        fluid(maxWidth: 150) {
+        fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid
         }
       }

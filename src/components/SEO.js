@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
+import JsonLd from "./JsonLd"
 
 const query = graphql`
   {
@@ -69,6 +70,47 @@ const SEO = ({ title, description }) => {
       )}
 
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+      <JsonLd>
+        {{
+          "@context": "https://schema.org",
+          "@type": "Barbershop",
+          url: "https://www.josdekbarbershop.com/",
+          name: "Josdek Barbershop open Monday to Saturday",
+          image: ["https://www.josdekbarbershop.com/images/heroBg.jpg"],
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+1407-844-1446",
+          },
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "8421 South Orange Blossom Trail Suite 229",
+            addressLocality: "Orlando",
+            addressRegion: "FL",
+            postalCode: "32809",
+            addressCountry: "US",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 28.44287,
+            longitude: -81.4019,
+          },
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+              ],
+              opens: "09:00",
+              closes: "19:00",
+            },
+          ],
+        }}
+      </JsonLd>
     </Helmet>
   )
 }
