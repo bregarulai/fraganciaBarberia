@@ -3,6 +3,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import JsonLd from "./JsonLd"
+import image from "../images/heroBg.jpg"
 
 const query = graphql`
   {
@@ -76,7 +77,7 @@ const SEO = ({ title, description }) => {
           "@type": "Barbershop",
           url: "https://www.josdekbarbershop.com/",
           name: "Josdek Barbershop open Monday to Saturday",
-          image: ["https://www.josdekbarbershop.com/images/heroBg.jpg"],
+          image: `${image}`,
           contactPoint: {
             "@type": "ContactPoint",
             telephone: "+1407-844-1446",
