@@ -71,6 +71,5 @@ module.exports = {
         siteUrl: `http://www.josdekbarbershop.com`,
       },
     },
-    `gatsby-plugin-preact`,
   ],
 }
