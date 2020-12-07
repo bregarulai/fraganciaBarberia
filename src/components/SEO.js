@@ -72,7 +72,7 @@ const SEO = ({ title, description }) => {
 
       <script type="application/ld+json">
         {`
-      "@context": "https://schema.org",
+     { "@context": "https://schema.org",
       "@type": "Barbershop",
       "image": [
         "src/images/heroBg.jpg",
@@ -110,7 +110,7 @@ const SEO = ({ title, description }) => {
         },
         
         
-      ],
+      ],}
     `}
       </script>
     </Helmet>
