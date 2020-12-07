@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
+import image from "../images/heroBg.jpg"
 
 const query = graphql`
   {
@@ -72,29 +73,16 @@ const SEO = ({ title, description }) => {
 
       <script type="application/ld+json">
         {`
-     { "@context": "https://schema.org",
-      "@type": "Barbershop",
-      "image": [
-        "src/images/heroBg.jpg",
-       ],
-      "name": "Josdek Barbershop",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "8421 South Orange Blossom Trail Suite 229",
-        "addressLocality": "Orlando",
-        "addressRegion": "FL",
-        "postalCode": "32809",
-        "addressCountry": "US"
-      },
-  
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 28.44287,
-        "longitude": -81.4019
-      },
-      "url": "https://www.josdekbarbershop.com/",
-      "telephone": "+1407-844-1446",
-      "openingHoursSpecification": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Barbershop",
+          "url": "https://www.josdekbarbershop.com/",
+          "name": "Josdek Barbershop",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1407-844-1446",
+          },
+           "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
@@ -107,11 +95,17 @@ const SEO = ({ title, description }) => {
           ],
           "opens": "09:00",
           "closes": "19:00"
-        },
-        
-        
-      ],}
-    `}
+        },    
+         "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8421 South Orange Blossom Trail Suite 229",
+        "addressLocality": "Orlando",
+        "addressRegion": "FL",
+        "postalCode": "32809",
+        "addressCountry": "US"
+      },
+        }
+      `}
       </script>
     </Helmet>
   )
