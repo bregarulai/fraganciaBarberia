@@ -3,6 +3,11 @@ import Footer from "./Footer"
 import Navigation from "./Navigation"
 import { GatsbyContext } from "../context/context"
 import Sidedrawer from "./Sidedrawer"
+import { setConfig } from "react-hot-loader"
+
+setConfig({
+  showReactDomPatchNotification: false,
+})
 
 const Layout = ({ children }) => {
   const { isSidebarOpen } = useContext(GatsbyContext)
